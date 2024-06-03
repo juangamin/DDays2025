@@ -15,6 +15,62 @@ body{
 	-ms-text-size-adjust: none;
 }
 
+/***********/
+
+/* Styles for tablets and larger screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for desktops and larger screens */
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+/* Styles for large desktops */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100%; /* Full width on mobile */
+}
+
+@media (min-width: 600px) {
+  .item {
+    flex: 1 1 48%; /* Two items per row on tablets */
+    margin: 1%;
+  }
+}
+
+@media (min-width: 992px) {
+  .item {
+    flex: 1 1 31%; /* Three items per row on desktops */
+    margin: 1%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*****************************/
+
 /* Remove the skype detection Flash object that appears near the footer */
 #skypedetectionswf{display:none}
 
