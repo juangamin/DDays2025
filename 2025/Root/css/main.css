@@ -1,0 +1,332 @@
+@viewport { width:device-width; zoom:1.0; }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Source+Sans+Pro|PT+Serif|PT+Sans|Lato|Lora); /* https so that anyone connecting over SSL in Chrome accepts the fonts */
+
+body{
+	text-align: center;
+	font-family: Georgia, Roboto, Open Sans, Lato, PT Serif, Lora, Arial;
+	/* font-size: 100%; */
+	margin: 0px;
+	padding-top:10px;  /* This will be covered by the fixed top menu.  See head-wrapper, #head below. */
+	background: #fff; 	  /* #ede6df; 	*/
+	/* Next, prevent text auto-resizing issues on smartphones ... */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
+/* Remove the skype detection Flash object that appears near the footer */
+#skypedetectionswf{display:none}
+
+h1, h2, h3, h4{
+	font-family: Georgia, Open Sans, Roboto, Verdana, Lato, Arial, Source Sans Pro;
+}
+
+a{
+	text-decoration: none;
+	/* color: #b32d2d; /* #0055CC blue or #003399 (UNR blue -- too dark) :: CU/OSU was #c33 */
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border-style: none;
+}
+
+code {
+	/* font-size: 1.3em; /* for inline text */
+}
+
+#head-wrapper{
+    /*margin-left: auto;
+    margin-right: auto; */
+    /*position:center;       /* was "fixed", which fixes the top menu in place. (See body padding above) */
+    top:0px;              /* Specify this, otherwise it falls below the padding at top of the body!      */
+    background: #B7B7A4;/*#faf8e7; /* #f1f1f7;  /* Specify a background color so it all looks pretty.  Was #efefe0 but changed to increase contrast.   */
+    padding: 2px 0px 0px 0px;
+    width: 1200px;
+	white-space:nowrap;
+	float:center;
+    border-bottom: 2px solid #000;
+}
+
+#head{
+	height: auto;  /* default was 75px to accommodate logo size */
+	/*width: 900px;*/
+	/* margin: 0px auto 0px auto; */
+	white-space: nowrap;
+	float:center;
+	font-family: Georgia, Lato, Arial;
+	/* border-bottom: 2px solid #000; */
+}
+
+#head img{
+	white-space: nowrap;
+	float: left;
+}
+
+#head h1{
+	font-family: Georgia, Open Sans;
+	font-size: 170%;
+	display: inline;
+	/* color: #81A7CD; */
+	padding: 0px 0.75em 0px 0px;
+	text-shadow: 1px 1px 1px #999;
+}
+
+#nav{
+	font-size: 160%;
+	padding: 10px 0px 10px 0px;
+	display:inline-block
+	text-align: center;
+}
+
+#nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	-webkit-padding-start: 0px;
+	-moz-padding-start: 0px;
+}
+
+#nav li{
+    padding: 0px 16px;
+		text-align: center;
+		display:inline-block
+}
+
+#nav li a{
+    display: inline;
+	padding: 8px 6px 8px 6px;
+	text-decoration: none;
+	font-size: 105%;
+	font-weight: bold;
+	text-align: center;
+	color: #000;    /* color of links in horizontal bar
+	/*text-shadow: 1px 1px 1px #aaa;*/
+	-webkit-transition: all .2s ease;
+}
+
+#nav li a:hover{
+	/*color: #c33; /* #0055CC  blue or #003399 (UNR blue -- too dark) :: CU/OSU was #c33 */
+  background-color: #666; /* Was UNR Silver #807f84 but contrast was low. */
+  color: #fff;
+}
+
+#nav li a.active {
+  background-color: #036; /* this one--->#036; UNR Silver = #807f84; UNR Gray = #999 */
+  color: #fff;
+  cursor: default;
+}
+
+#marquee{
+        width: 1024px;
+	margin: 0 auto;
+	background: #fff;
+	/* background: -webkit-gradient(radial, 700 500, 850, 50% 95%, 40, from(#222), to(#666)); */
+	/* background: -moz-radial-gradient(center 500px 45deg, circle cover, #666 0%, #222 100%); */
+	text-align: left;
+	/* text-align: justify;
+	text-justify: newspaper; */
+}
+
+#marquee-wrapper{
+	width: 1024px;
+	margin: 0px 10px 0px 10px; <~-- 0px auto; -->
+	color: #000;
+}
+
+#marquee-text {
+	width: 850px;
+	padding: 5px 10px 10px 10px;
+	float: left;
+	/*font-size: 1.1em;  */
+	line-height: 140%;
+}
+
+#marquee-box{
+	width: 280px;
+	float: left;
+	padding: 30px 30px 30px 30px;
+	vertical-align:top;
+	/* background: #ffff99; */
+	line-height: 140%;
+}
+
+#marquee a{
+	text-decoration: none;
+	color: #b32d2d; /* #0055CC  blue or #003399 (UNR blue -- too dark) :: CU/OSU was #c33 */
+}
+/* background????
+
+#marquee a:hover{
+	text-decoration: underline;
+	/* font-weight:bold;
+	color: #ce5;  */
+}
+
+#marquee ul {
+	/* list-style: none;
+	text-indent: -1.5em; */
+	list-style: disc;
+	padding: 0px 0px 0px 2.5em;
+}
+
+#marquee li {
+	padding: 7px 0px 7px 0px;
+}
+
+#index-link-list{
+	width: 1024px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 25px 0px;
+	background: #f1f1f7;  /* Was #efefe0 but changed to increase contrast. */
+}
+
+.half-section{
+	width: 45%;
+	padding: 0px 20px;
+	float: left;
+	text-align: justify;
+	text-justify: newspaper;
+}
+
+.half-section h3{
+	color: #666;
+	text-align: center;
+	border-bottom: 2px solid #666;
+}
+
+.half-section ul{
+	list-style-position:outside;
+	text-indent: 0em;
+	padding: 0px 0px 0px 2.5em;
+}
+
+.half-section li{
+	list-style-type: none;
+	padding: 0px 7px 0px 7px;
+}
+
+#plain {
+	font-size:0.95em;
+	line-height: 140%;
+	width:800px;
+	text-align:left;
+	margin: 0 auto;
+	padding: 1em;
+	background: #fff;
+	border:1px solid;
+}
+
+#plain ul {
+	list-style-type:none;
+	text-indent: -1.5em;
+	padding: 0 0 0 2.5em;
+}
+
+#plain li {
+	margin: 0.5em 0 0.5em 0;
+}
+
+#keyboard {
+	font-family:Courier New;
+	font-weight:bold;
+	color: #b32d2d; /* #0055CC  blue or #003399 (UNR blue -- too dark) :: CU/OSU was blue */
+	font-size:1.1em;
+}
+
+#code {
+  border: 1px solid #cacaca;
+  width: 675px;  /* 80 characters x 12px high x 0.825 width/height = 673.2px */
+  line-height: 1.5em;
+  /* font-size:1.1em; */
+  font-family: Monaco, Courier New, DejaVu Sans Mono, Bitstream Vera Sans Mono, monospace;
+  font-weight:bold;
+  padding:5px;
+  overflow:auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #FAFAFB;
+  color: #393939;
+  margin: 0px;
+}
+
+#page-content{
+	padding: 20px 0px;
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: .95em;
+	line-height: 110%;
+}
+
+#footer-wrapper{
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+}
+
+#footer{
+	width: 960px;
+	padding: 15px 0px;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+/* background shade for divs */
+.shadediv {
+    background: #f1f1f7;
+    padding: 0.1em 0.1em 0.5em 0.5em;
+}
+
+/* Add some simple table formatting */
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+}
+th {
+    padding: 5px;
+    text-align: center;
+}
+td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #fff;
+}
+table tr:nth-child(odd) {
+   background-color: #f1f1f7;  /* was set to: transparent; */
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* COLORS: Also, #eeeeff makes an OK but a little too purple background color...
+           #f1f1f1 was also good, but a little cold... f1f1f7 a good compromise. */
