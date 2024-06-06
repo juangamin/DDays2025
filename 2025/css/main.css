@@ -182,16 +182,14 @@ code {
 }
 
 #head h1{
-	font-family: Georgia, Open Sans;
-	font-size: 170%;
-	display: inline;
-	/* color: #81A7CD; */
-	padding: 0px 0.75em 0px 0px;
-	text-shadow: 1px 1px 1px #999;
+	font-size: 130%;
+	padding: 10px 0px 10px 0px;
+	display:inline-block
+	text-align: center;
 }
 
 #nav{
-	font-size: 160%;
+	font-size: 130%;
 	padding: 10px 0px 10px 0px;
 	display:inline-block
 	text-align: center;
