@@ -149,12 +149,28 @@
   of support. We will provide details for the application process once our funding situation is clear.</p>
 
 
+  <img id="timeBasedImage" src="" alt="Time-based image" >
 
 
-  <img src="../images/student.png" alt="Description of Image">
+  <script>
+      function setImageBasedOnTime() {
+          const imgElement = document.getElementById('timeBasedImage');
+          const currentMinute = new Date().getMinutes();
 
+          if (currentMinute <=  15) {
+              imgElement.src = '../images/student2.png'; // Morning image (6 AM - 12 PM)
+          } else if (currentMinute > 15 && currentMinute <= 30) {
+              imgElement.src = '../images/student2.png'; // Afternoon image (12 PM - 6 PM)
+          } else if (currentMinute > 30 && currentMinute <= 45) {
+              imgElement.src = '../images/student.png'; // Evening image (6 PM - 9 PM)
+          } else {
+              imgElement.src = '../images/student2.png'; // Night image (9 PM - 6 AM)
+          }
+      }
 
-
+      // Call the function when the page loads
+      window.onload = setImageBasedOnTime;
+  </script>
 
 
 
