@@ -407,6 +407,7 @@ code {
 /* Add some simple table formatting */
 table {
     width:100%;
+    background-color: white;
 }
 table, th, td {
     border: 1px solid #aaa;
