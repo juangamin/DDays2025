@@ -158,7 +158,7 @@ code {
     margin-right: auto; */
     /*position:center;       /* was "fixed", which fixes the top menu in place. (See body padding above) */
     top:0px;              /* Specify this, otherwise it falls below the padding at top of the body!      */
-    background: #B7B7A4;/*#faf8e7; /* #f1f1f7;  /* Specify a background color so it all looks pretty.  Was #efefe0 but changed to increase contrast.   */
+    background: #F6EABE;/*#faf8e7; /* #f1f1f7;  /* Specify a background color so it all looks pretty.  Was #efefe0 but changed to increase contrast.   */
     padding: 2px 0px 0px 0px;
     width: 1200px;
 	white-space:nowrap;
